@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Primera Entrada",
+    "content": "<p>Este es el <strong>contenido completo</strong> de la primera entrada. Aquí puedes añadir <em>texto en cursiva</em>, <u>subrayado</u>, y otros elementos HTML.</p><p>También puedes añadir imágenes:</p><img src='https://via.placeholder.com/150' alt='Imagen de ejemplo'><p>Más contenido aquí...</p>",
+    "date": "2024-09-01",
+    "tags": ["introducción", "ejemplo", "tutorial"]
+  },
+  {
+    "title": "Segunda Entrada",
+    "content": "<p>Este es el contenido completo de la segunda entrada. Puedes añadir listas:</p><ul><li>Elemento 1</li><li>Elemento 2</li><li>Elemento 3</li></ul><p>Y más imágenes:</p><img src='https://via.placeholder.com/150' alt='Otra imagen de ejemplo'><p>Más contenido aquí...</p>",
+    "date": "2024-09-02",
+    "tags": ["listas", "imágenes", "tutorial"]
+  }
+]

@@ -1,0 +1,251 @@
+/*
+ | ------------+-------------------------------------------
+ | Archivo     | styles.css
+ | Descripcion | Archivo  de  estilos del Blog (index.html)
+ | Autor       | Raul Ibañez
+ | Version     | 1.0
+ | Fecha       | 05/09/2024
+ | Observacion | Implementacion de FlexBox y Media Queries
+ | ------------+--------------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+  /*font-family: 'Arial', sans-serif;*/
+  font-family: 'Roboto Mono', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--header-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.initials {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.name {
+  font-size: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+button {
+  font-family: 'Roboto Mono', sans-serif;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: var(--button-background);
+  color: var(--button-color);
+  border-radius: 4px;
+}
+
+#posts-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem 0;
+}
+
+.post {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+}
+
+.post-date {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.post-content {
+  display: none;
+  margin-top: 1rem;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+}
+
+.post-content ul {
+  padding-left: 1.5rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-tags {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#search-button {
+  font-size: 1.2rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  color: #aaa;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.close-button {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+#pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+#pagination-controls button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: var(--button-background);
+  color: var(--button-color);
+  border-radius: 4px;
+}
+
+#page-info {
+  font-size: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .header-right {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  nav ul {
+    gap: 0.25rem;
+  }
+
+  button {
+    padding: 0.25rem 0.5rem;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .modal-content {
+    padding: 1rem;
+  }
+}

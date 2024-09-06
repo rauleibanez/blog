@@ -1,0 +1,62 @@
+<!--
+ | ============+===========================================
+ | Archivo     | index.html
+ | Descripcion | Pagina Principal del Blog 
+ | Autor       | Raul Ibañez
+ | Version     | 1.0
+ | Fecha       | 05/09/2024
+ | Observacion | Implementacion de FlexBox y Media Queries
+ | ============+===========================================
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image" href="public/img/favicon.ico" />
+  <title>Mi Blog</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link id="theme-link" rel="stylesheet" href="css/light-theme.css">
+</head>
+<body>
+  
+  <header>
+    <div class="logo">      
+      <img src="public/img/favicon.ico"/>      
+    </div>
+  
+    <nav>
+      <ul>        
+        <li><a href="#" id="blog-link">Blog</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Notes</a></li>
+      </ul>
+    </nav>
+  
+    <div class="header-right">      
+      <button id="search-button">🔍</button>
+      <button id="theme-toggle">🌞/🌜</button>
+    </div>
+  </header>
+
+  <main id="posts-container"></main>
+  
+  <div id="pagination-controls">
+    <button id="prev-page">Anterior</button>
+    <span id="page-info"></span>
+    <button id="next-page">Siguiente</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="search-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">×</span>
+      <input type="text" id="modal-search-input" placeholder="Buscar...">      
+      <button id="modal-search-button">Buscar</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
