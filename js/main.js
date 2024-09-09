@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const prevPageButton = document.getElementById('prev-page');
   const nextPageButton = document.getElementById('next-page');
   const pageInfo = document.getElementById('page-info');
+  const addButton = document.getElementById('add-button');
+  const modalAddForm = document.getElementById('new-post-form');
+  const closeForm = document.querySelector('.close-form-button');
+  const addPostForm = document.getElementById('add-post-form');
+  const profileLink = document.getElementById('profile-link');
 
 
   let posts = [];
@@ -37,6 +42,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   searchButton.addEventListener('click', () => {
     searchModal.style.display = 'block';
+  });
+
+  addButton.addEventListener('click', () => {
+    modalAddForm.style.display = 'block';
+  });
+
+  closeForm.addEventListener('click', () => {
+    modalAddForm.style.display = 'none';
   });
 
   closeButton.addEventListener('click', () => {
@@ -58,8 +71,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   blogLink.addEventListener('click', (event) => {
     event.preventDefault();
-    displayPosts(posts, currentPage);
-    updatePaginationControls();
+    if (postsContainer.style.display === 'none') {
+      postsContainer.style.display = 'block';
+      document.getElementById('pagination-controls').style.display = 'flex';
+      if (document.getElementById('profile-container').style.display === 'block'){
+        document.getElementById('profile-container').style.display = 'none';
+      }
+    } else {
+      displayPosts(posts, currentPage);
+      updatePaginationControls();            
+    }    
+  });
+
+  profileLink.addEventListener('click', (event) => {
+    event.preventDefault();    
+    postsContainer.style.display = 'none';
+    document.getElementById('pagination-controls').style.display = 'none';    
+    document.getElementById('profile-container').style.display = 'block';    
+    let textos={};
+    let contenido='';
+    leerArchivo();    
   });
 
   prevPageButton.addEventListener('click', () => {
@@ -84,6 +115,21 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       themeLink.setAttribute('href', 'css/light-theme.css');
     }
+  });
+
+  addPostForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const newPost = {
+      title: event.target.title.value,
+      content: event.target.content.value,
+      date: event.target.date.value,
+      tags: event.target.tags.value.split(',').map(tag => tag.trim())
+    };
+    posts.push(newPost);
+    posts.sort((a, b) => new Date(b.date) - new Date(a.date)); // Ordenar por fecha más reciente
+    displayPosts(posts, currentPage);
+    updatePaginationControls();
+    event.target.reset();
   });
 
   function displayPosts(posts, page) {

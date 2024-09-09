@@ -10,5 +10,11 @@
     "content": "<p>Este es el contenido completo de la segunda entrada. Puedes añadir listas:</p><ul><li>Elemento 1</li><li>Elemento 2</li><li>Elemento 3</li></ul><p>Y más imágenes:</p><img src='https://via.placeholder.com/150' alt='Otra imagen de ejemplo'><p>Más contenido aquí...</p>",
     "date": "2024-09-02",
     "tags": ["listas", "imágenes", "tutorial"]
+  },
+  {
+    "title": "Tercera Entrada",
+    "content": "<p>Este es el contenido completo de la Tercera entrada. Puedes añadir tablas:</p> <p><table><tr><td>&nbsp;</td><td>Knocky</td><td>Flor</td><td>Ella</td><td>Juan</td></tr><tr><td>Raza</td><td>Jack Russell</td><td>Caniche</td><td>Perro callejero</td><td>Cocker Spaniel</td></tr><tr><td>Edad</td><td>16</td><td>9</td><td>10</td><td>5</td></tr><tr><td>Propietario</td><td>Suegra</td><td>Yo</td><td>Yo</td><td>Cuñada</td></tr><tr><td>Hábitos alimentarios</td><td>Come las sobras de todos</td><td>Mordisquea la comida</td><td>Come en abundancia</td><td>Come hasta que revienta</td></tr></table> </p> <p>Y más imágenes:</p><img src='https://via.placeholder.com/150' alt='Otra imagen de ejemplo'><p>Más contenido aquí...</p>",
+    "date": "2024-09-05",
+    "tags": ["tablas", "ejemplo", "tutorial"]
   }
 ]

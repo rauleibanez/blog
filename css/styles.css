@@ -24,17 +24,19 @@ body {
 }
 
 header {
-  width: 100%;
+  width: 80%;
   padding: 1rem;
   background-color: var(--header-background);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  background-color: #fff;
 }
 
 .initials {
@@ -59,6 +61,26 @@ nav a {
   text-decoration: none;
   color: var(--text-color);
 }
+.menu {
+  /*--------------Subrayado del Hoover----*/
+  background-image:
+  linear-gradient(
+    transparent 0%,
+    transparent 90%,
+    black 90%,
+    white 100%
+    );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 300ms;
+}
+
+.menu:hover{
+  color: var(--text-secondary);
+  background-size: 100% 100%;
+  background-position-x: left;
+}
 
 .header-right {
   display: flex;
@@ -82,9 +104,10 @@ button {
   border-radius: 4px;
 }
 
+#container,
 #posts-container {
   width: 90%;
-  max-width: 800px;
+  max-width: 900px;
   margin: 2rem 0;
 }
 
@@ -163,6 +186,7 @@ button {
   text-align: center;
 }
 
+.close-form-button,
 .close-button {
   color: black;
   float: right;
@@ -170,6 +194,8 @@ button {
   font-weight: bold;
 }
 
+.close-form-button:hover,
+.close-form-button:focus,
 .close-button:hover,
 .close-button:focus {
   color: black;
@@ -205,12 +231,131 @@ input[type="text"] {
 #page-info {
   font-size: 1rem;
 }
+/*-------------------------------*/
 
+/* PERFIL */
+/*-------------------------------*/
+.main-profile{
+  display: grid;
+  grid-column: 2;
+  justify-items: center;
+  height: 350px;
+  margin-top: 80px;
+}
+
+.profile{
+  padding: 70px 100px;
+  background-color: var(--header-background);
+  margin-bottom: 5px;
+  display: flex;  
+}
+
+.profile img{
+  width:  220px;
+  margin-right: 30px;
+}
+
+.projects-container{  
+  padding: 0 80px 40px;
+}
+
+.projects-container h3{
+  border-bottom: 1px solid #cdd2da;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.project{
+  padding: 10px;
+  max-width: 100%;
+  margin-bottom: 50px;  
+}
+
+.project-card{
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: 480px 189px;
+  justify-content: space-between;
+  max-width: 100%;
+  border-bottom: 1px solid var(--border-color);  
+}
+
+.project-card a{
+  text-decoration: none;
+  color: var(--button-color);
+}
+
+.project-card a:hover{
+    /*color:white;*/
+    background-color: var(--header-background);
+    font-weight: bold;
+    text-shadow: 2px 4px 6px #1162ac;     
+}
+
+.project-info{
+  max-width: 480px;
+  margin-bottom: 5px;
+  display: block; 
+}
+
+.project-img{
+  width:  180px;
+  margin-right: 5px;  
+}
+
+.project h4{
+  margin: 20px 0;
+}
+
+.project p{
+  margin-bottom: 35px;
+}
+
+
+/* CONTACTO */
+/*-------------------------------*/
+.section-contact{
+  width: 100%;
+  background-color: var(--header-background);
+  display: flex;
+  justify-content: space-between;
+  /*padding: 20px 80px 50px;*/
+}
+
+.contact{
+  display: flex;
+  margin: 20px 0px 20px 20px;
+}
+
+.contact img{
+  width: 100px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.contact-info{
+  padding: 20px 0;
+  width: 300px;
+}
+
+.contact-info a{
+  text-decoration: none;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 5px;
+}
+.contact-info p{
+  margin-top: 10px;
+}
+
+
+/*-------------------------------*/
 /* Media Queries */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    position: relative;    
   }
 
   nav ul {
@@ -219,18 +364,23 @@ input[type="text"] {
   }
 
   .header-right {
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     gap: 0.5rem;
   }
 
   .modal-content {
     width: 90%;
   }
+
+
+
 }
 
 @media (max-width: 480px) {
   header {
     padding: 0.5rem;
+    position: relative;
   }
 
   nav ul {
@@ -248,4 +398,33 @@ input[type="text"] {
   .modal-content {
     padding: 1rem;
   }
-}
+
+  /*Página de Perfil*/
+  .profile{
+    padding: 10px;
+    display: grid;
+  }
+
+  .profile-img img{
+    width: 100%;
+  }
+
+  .projects-container{
+    padding: 10px;
+    display: grid;
+  }
+
+  .project{
+    padding: 0;
+    max-width: 100%;    
+  }
+  
+  .project-card{
+    display: block;
+  }
+
+  .section-contact{
+    display: block;
+  }
+
+ }
