@@ -15,8 +15,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image" href="public/img/favicon.ico" />
   <title>Mi Blog</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link id="theme-link" rel="stylesheet" href="css/light-theme.css">
+  <script src="js/app.js"></script>
 </head>
 <body>
   
@@ -27,25 +29,55 @@
   
     <nav>
       <ul>        
-        <li><a href="#" id="blog-link">Blog</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Notes</a></li>
+        <li><a href="#" id="blog-link" class="menu"> Blog </a></li>
+        <li><a href="#" id="profile-link" class="menu"> About Me </a></li>
+        <li><a href="#" class="menu"> Notes </a></li>
       </ul>
     </nav>
   
     <div class="header-right">      
+      <button id="add-button">🆕</button>
       <button id="search-button">🔍</button>
-      <button id="theme-toggle">🌞/🌜</button>
+      <button id="theme-toggle">🌞/🌜</button>      
     </div>
   </header>
 
-  <main id="posts-container"></main>
+  <main id="container">
+
+    <div id="posts-container" style="display: block;"></div>
+    <div id="pagination-controls" style="display: flex;">
+      <button id="prev-page">Anterior</button>
+      <span id="page-info"></span>
+      <button id="next-page">Siguiente</button>
+    </div>
+
+    <div id="profile-container" class="main-profile" style="display: none;">
+        <section class="profile">         
+            <div class="profile-img">
+                <img src="public/img/profile.png" alt="">
+            </div>    
+            <div class="profile-info">
+                <h2>Hola, mi nombre es <span id="name"></span></h2>
+                <p id="profile"></p>
+            </div>
+        </section>
+
+        <section class="project-container">
+            <h3>Proyectos</h3>
+            <div class="project" id="project"></div>            
+        </section>
+        
+        <section class="section-contact">
+        <div class="contact">            
+          <div class="contact-info" id="mail"></div>
+        </div>
+        <div class="contact">           
+          <div class="contact-info" id="linkedin"></div>
+        </div>
+    </section>
+    </div>
   
-  <div id="pagination-controls">
-    <button id="prev-page">Anterior</button>
-    <span id="page-info"></span>
-    <button id="next-page">Siguiente</button>
-  </div>
+  </main>
 
   <!-- Modal -->
   <div id="search-modal" class="modal">
@@ -56,7 +88,25 @@
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <!-- Formulario para agregar nuevos posts -->
+  <div id="new-post-form" class="modal">
+    <div class="modal-content">
+      <span class="close-form-button">×</span>
+      <h2>Agregar Nuevo Post</h2>
+      <form id="add-post-form">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="content">Contenido:</label>
+        <textarea id="content" name="content" required></textarea>
+        <label for="date">Fecha:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="tags">Tags (separados por comas):</label>
+        <input type="text" id="tags" name="tags">
+        <button type="submit">Agregar Post</button>
+      </form>
+    </div>  
+  </div>
+
+  <script src="js/main.js"></script>  
 </body>
 </html>
-
