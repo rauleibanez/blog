@@ -72,6 +72,7 @@ async function loadPortfolio() {
   container.innerHTML = profileHTML + sectionTitleHTML + projectsHTML;
 }
 /*
+ * Nseu
 async function loadBlog() {
   const res = await fetch('data/posts.json');
   const posts = await res.json();
