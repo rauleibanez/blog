@@ -1,28 +1,37 @@
-[
-  { 
-  "name": "Raúl Ibañez Martínez",
-  "profession": "IT Professional",  
-  "profile": "Professional with extensive experience in technical support (help desk), network and server administration in Windows and Linux environments. I also have experience as a web developer using Python technology and intermediate knowledge in cybersecurity, allowing me to tackle challenges related to data protection and threat prevention.",
-  "email": "rauleibanez@gmail.com",  
-  "page": "https://www.linkedin.com/in/raul-ibañez-martinez-aba276134",  
-  "projects": [
-    {"title": "Django + Vue Js Integration", "href": "https://github.com/rauleibanez/djangoCrud_Vue", "body": "Vue Js App & Django Rest Framework API's.", "logo":"public/img/python.png"},
-    {"title": "Control de Actividades Django + React Js", "href": "https://github.com/rauleibanez/djangoShop_R", "body": "Task React App, and Django Rest Framework API's.", "logo":"public/img/python.png"},
-    {"title": "Control de Actividades Django", "href": "https://github.com/rauleibanez/djangocrud", "body": "Task App Django + Jinja render.", "logo":"public/img/python.png"},
-    {"title": "Administracion de Clientes JavaScript ", "href": "https://github.com/rauleibanez/APICRUD_NodeJs_MySQL", "body": "Client Management App using JavaScript, Node Js, Express Js, MySQL, HBS Render & Bootstrap.", "logo":"public/img/js.png"}
-    ]
+{
+  "profile": {
+    "name": "Raúl Ibañez Martínez",
+    "title": "Desarrollador Frelance",
+    "pitch": "Apasionado por construir plataformas escalables que combinan AI, automatización y comunicación creativa. Enfocado en accesibilidad, innovación y experiencia de usuario.",
+    "photo": "public/img/profile.png",
+    "linkedin": "https://www.linkedin.com/in/raul-ibañez-martinez-aba276134",
+    "telegram": "https://t.me/@rauleibanez"
   },
-  {
-  "name": "Raúl Ibañez Martínez",
-  "profession": "Ingeniero de Sistemas",  
-  "profile": "Profesional con amplia experiencia en soporte técnico (help desk), administración de redes y servidores en entornos Windows y Linux. Con experiencia como desarrollador web utilizando tecnología Python y conocimientos intermedios en ciberseguridad que me permiten abordar desafíos relacionados con la protección de datos y la prevención de amenazas.",  
-  "email": "rauleibanez@gmail.com",  
-  "page": "https://www.linkedin.com/in/raul-ibañez-martinez-aba276134",  
   "projects": [
-    {"title": "Integración Django + Vue Js", "href": "https://github.com/rauleibanez/djangoCrud_Vue", "body": "Aplicación Vue Js que consume APIs Creadeas en Django Rest Framework.", "logo":"public/img/python.png"},
-    {"title": "Control de Actividades Django + React Js", "href": "https://github.com/rauleibanez/djangoShop_R", "body": "Aplicación React para Administrar Actividades, versión usando React y Django Rest Framework.", "logo":"public/img/python.png"},
-    {"title": "Control de Actividades Django", "href": "https://github.com/rauleibanez/djangocrud", "body": "Aplicación para Administrar Actividades, versión usando Django + Jinja.", "logo":"public/img/python.png"},
-    {"title": "Administracion de Clientes JavaScript ", "href": "https://github.com/rauleibanez/APICRUD_NodeJs_MySQL", "body": "Aplicación para Administrar datos de Clientes, usando Rutas con JavaScript, Node Js, Express Js, MySQL, HBS Render y Bootstrap.", "logo":"public/img/js.png"}
-    ]
-  }  
-]
+    {
+      "title": "Plataforma web basada en I.A. para Turismo",
+      "description": "Web basada en Inteligencia Artificial que recomienda negocios, sitios turísticos y experiencias locales en El Carmen de Bolívar, Colombia. Utiliza Machine Learning para sugerir lugares según intereses del usuario, puntuaciones de visitantes y categorías como restaurantes, hospedajes, bares, sitios nocturnos y más",
+      "repo": "https://github.com/rauleibanez/turismo",
+      "image": "public/img/imagen_4.png"
+    },
+    {
+      "title": "Asistente Vitual basado en I.A.",
+      "description": "Chat Bot simple de modelo hibrido (Basado en reglas y con aprendizaje de pre-entrenamiento) realizado con Python Flask y Scikit-learn ",
+      "repo": "https://github.com/rauleibanez/chatbot_simple_IA",
+      "image": "public/img/imagen_2.png"
+    },
+    {
+      "title": "Exploratory Data Analysis With Python and Pandas",
+      "description": "Proyecto de Análisis de Datos Exploratorio con Python mediante la libreria Pandas y visualización de gráficos con  Seaborn y Matplotlib.",
+      "repo": "https://github.com/rauleibanez/EDA_Python",
+      "image": "public/img/imagen_3.png"
+    },
+    {
+      "title": "Simulación de Blokchain ",
+      "description": "Blockchain básico con Python: Este proyecto trata sobre como se puede desarrollar un pequeño programa de Blockchain usando Python.",
+      "repo": "https://github.com/rauleibanez/Blkchn_PY",
+      "image": "public/img/imagen_1.png"
+    }
+
+  ]
+}

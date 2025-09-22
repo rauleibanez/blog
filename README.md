@@ -1,33 +1,90 @@
-# Resumen del proyecto
+# 🚀 Raúl Ibáñez — Portafolio & Blog SPA
 
-**Blog Minimalista con Javascript**: Este proyecto trata sobre como se puede desarrollar un peque�o Blog usando HTML, CSS, JavaScript y archivos Json como repositorio de datos.
+Bienvenido a mi portafolio/blog personal, una aplicación web de una sola página (SPA) desarrollada con HTML, CSS y JavaScript puro, diseñada para ser alojada en GitHub Pages. Este proyecto refleja mi perfil como Arquitecto de Sistemas, Líder Técnico y Comunicador Educativo, con un enfoque en desarrollo en Python, análisis de datos, estadística y tecnología.
 
-# Objetivos del Proyecto
+---
 
-Este proyecto, sigue **dos objetivos** de aprendizaje:
+## 🎯 Objetivos del Proyecto
 
-1. Dise�ar y codificar un blog utilizando HTML, CSS y Javascript. 
-2. Entender los conceptos b�sicos manipulacion del DOM.
+- Mostrar mis mejores proyectos alojados en GitHub.
+- Publicar artículos técnicos y educativos sobre desarrollo, datos y automatización.
+- Ofrecer una experiencia visual moderna, responsive y accesible.
+- Facilitar el contacto profesional mediante enlaces a LinkedIn y Telegram.
 
-Al final de este proyecto, se podr� comprender c�mo insertar componentes HTML dentro del DOM en tiempo real, para hacer una aplicacion SPA din�mica, sencilla y sin la implementaci�n de Frameworks de Front End.
+---
 
-# Requisitos
+## 🧩 Características Técnicas
 
-El �nico requisito es tener conocimientos b�sicos en HTML, CSS y Javascript.
+- **SPA (Single Page Application)** sin frameworks externos.
+- **Diseño responsive** para móviles, tablets y escritorio.
+- **Modo claro/oscuro** con botón de cambio de tema.
+- **Menú hamburguesa** en pantallas pequeñas.
+- **Datos dinámicos** cargados desde archivos JSON (`portfolio.json` y `blog.json`).
+- **Tarjeta de perfil profesional** con foto, pitch y enlaces sociales.
+- **Tarjetas de proyectos** con imagen, descripción y enlace a GitHub.
+- **Blog interactivo** con:
+  - Expansión de contenido al hacer clic.
+  - Paginador dinámico.
+  - Filtros por categoría y búsqueda por palabra clave.
+  - Metadatos como fecha y etiquetas.
 
-# Requerimientos
+---
 
-- Servidor o Servicio Web.
+## 📁 Estructura del Proyecto
 
-# Estructura del proyecto
+```
+/portfolio-blog/
+│
+├── index.html
+├── style.css
+├── script.js
+├── data/
+│   ├── portfolio.json
+│   └── blog.json
+└── assets/
+    └── icons (FontAwesome vía CDN)
+```
 
-El proyecto pr�ctico de **Blog Minimalista con Javascript** se divide en las siguientes tareas:
+---
 
-- Crear los archivos HTML, CSS, Js y Jason con su editor de preferencia.
-- Definir el dise�o visual de la p�gina.
-  - Temas visuales (Dark y Light) con CSS.
-  - Posici�n de elementos en la p�gina con javascript.
-  - Implementacion de Media Queries para conseguir dise�o Responsive.
-- Codificar las funciones para botones y enlaces en Javascript.  
-- Ejecutar el codigo, probar y corregir errores.
+## 🛠️ Tecnologías Utilizadas
+
+- HTML5
+- CSS3 (Flexbox, media queries, variables CSS)
+- JavaScript (DOM, eventos, paginación, filtrado)
+- FontAwesome (íconos sociales y de navegación)
+- GitHub Pages (hosting)
+
+---
+
+## 📬 Contacto
+
+- [LinkedIn](https://www.linkedin.com/in/raul-ibañez-martinez-aba276134)
+- [Telegram](https://t.me/@rauleibanez)
+
+
+---
+
+## 📌 Próximas mejoras
+
+- Agregar categorías dinámicas desde el JSON.
+- Implementar animaciones suaves con CSS.
+- Incluir sección de contacto con formulario.
+- Optimizar accesibilidad (WAI-ARIA).
+
+---
+
+## 🧠 Autor
+
+**Raúl Ibáñez M.**
+Desarrollador Freelancer | Líder Técnico | Educador Tecnológico
+Apasionado por construir soluciones que combinan automatización, pedagogía y experiencia de usuario.
+
+---
+
+## 📝 Licencia
+
+Este proyecto está bajo la licencia MIT. Puedes usarlo, modificarlo y compartirlo libremente.
+
+---
 
