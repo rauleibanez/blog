@@ -9,6 +9,12 @@
   },
   "projects": [
     {
+      "title": "SPA de Optimización de Turnos para Farmacias de EPS basada en I.A.",
+      "description": "es una plataforma desarrollada para optimizar el proceso de dispensación de medicamentos en farmacias EPS mediante la automatización de la gestión de recetas médicas, priorización inteligente de atención, control de inventario y trazabilidad completa del proceso asistencial",
+      "repo": "https://github.com/rauleibanez/Turnos_IA",
+      "image": "public/img/imagen_5.png"
+    },
+    {
       "title": "Plataforma web basada en I.A. para Turismo",
       "description": "Web basada en Inteligencia Artificial que recomienda negocios, sitios turísticos y experiencias locales en El Carmen de Bolívar, Colombia. Utiliza Machine Learning para sugerir lugares según intereses del usuario, puntuaciones de visitantes y categorías como restaurantes, hospedajes, bares, sitios nocturnos y más",
       "repo": "https://github.com/rauleibanez/turismo",
