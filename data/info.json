@@ -10,7 +10,7 @@
   "projects": [
     {
       "title": "SPA de Optimización de Turnos para Farmacias de EPS basada en I.A.",
-      "description": "es una plataforma desarrollada para optimizar el proceso de dispensación de medicamentos en farmacias EPS mediante la automatización de la gestión de recetas médicas, priorización inteligente de atención, control de inventario y trazabilidad completa del proceso asistencial",
+      "description": "Es una plataforma desarrollada para optimizar el proceso de dispensación de medicamentos en farmacias EPS mediante la automatización de la gestión de recetas médicas, priorización inteligente de atención, control de inventario y trazabilidad completa del proceso asistencial",
       "repo": "https://github.com/rauleibanez/Turnos_IA",
       "image": "public/img/imagen_5.png"
     },
